@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
 });
 
 const CategoryTabBar = ({
-    goToPage,
     activeTab,
     tabs,
     tabBarStyle,
@@ -70,7 +69,6 @@ const CategoryTabBar = ({
                     return (
                         <TouchableOpacity
                             key={tab}
-                            onPress={() => goToPage(i)}
                             style={styles.tab}>
                             {iconType === IconType.material ? (
                                 <MaIcon

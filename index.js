@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         bottom: 0,
         left: 0,
         right: 0,
-        paddingBottom: isIphoneXorAbove() ? 15 : 0
+        paddingBottom: isIphoneXorAbove() ? 25 : 5
     }
 });
 
