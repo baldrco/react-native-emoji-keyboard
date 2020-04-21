@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     tab: {
-        marginLeft: 10
+        marginLeft: (width / 9) - 23
     },
     backsplace: {
         marginRight: 20
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
 
 const CategoryTabBar = ({
     activeTab,
+    goToPage,
     tabs,
     tabBarStyle,
     categories,
@@ -69,6 +70,7 @@ const CategoryTabBar = ({
                     return (
                         <TouchableOpacity
                             key={tab}
+                            onPress={() => goToPage(i)}
                             style={styles.tab}>
                             {iconType === IconType.material ? (
                                 <MaIcon
