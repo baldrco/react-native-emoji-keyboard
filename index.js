@@ -115,6 +115,7 @@ const EmojiBoard = ({
                 containerStyle
             ]}>
             <ScrollableTabView
+                prerenderingSiblingsNumber={Infinity}
                 tabBarPosition={tabBarPosition}
                 renderTabBar={() => (
                     <CategoryTabBar
