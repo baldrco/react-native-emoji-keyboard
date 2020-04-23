@@ -118,6 +118,7 @@ const CategoryView = ({
                 />
             )}
             <ScrollableTabView
+                prerenderingSiblingsNumber={Infinity}
                 tabBarPosition="top"
                 renderTabBar={() => tabBar()}
                 initialPage={0}>
